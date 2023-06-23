@@ -1,0 +1,335 @@
+{
+  "pdu_types": {
+    "0": {
+      "name": "OTHER",
+      "description": "Other"
+    },
+    "1": {
+      "name": "ENTITY_STATE",
+      "description": "Entity State",
+      "entityIdFieldName": "entityID"
+    },
+    "2": {
+      "name": "FIRE",
+      "description": "Fire",
+      "entityIdFieldName": "firingEntityID"
+    },
+    "3": {
+      "name": "DETONATION",
+      "description": "Detonation",
+      "entityIdFieldName": "firingEntityID"
+    },
+    "4": {
+      "name": "COLLISION",
+      "description": "Collision",
+      "entityIdFieldName": "issuingEntityID"
+    },
+    "5": {
+      "name": "SERVICE_REQUEST",
+      "description": "Service Request",
+      "entityIdFieldName": "requestingEntityID"
+    },
+    "6": {
+      "name": "RESUPPLY_OFFER",
+      "description": "Resupply Offer",
+      "entityIdFieldName": "supplyingEntityID"
+    },
+    "7": {
+      "name": "RESUPPLY_RECEIVED",
+      "description": "Resupply Received",
+      "entityIdFieldName": "receivingEntityID"
+    },
+    "8": {
+      "name": "RESUPPLY_CANCEL",
+      "description": "Resupply Cancel"
+    },
+    "9": {
+      "name": "REPAIR_COMPLETE",
+      "description": "Repair Complete",
+      "entityIdFieldName": "repairingEntityID"
+    },
+    "10": {
+      "name": "REPAIR_RESPONSE",
+      "description": "Repair Response",
+      "entityIdFieldName": "repairingEntityID"
+    },
+    "11": {
+      "name": "CREATE_ENTITY",
+      "description": "Create Entity",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "12": {
+      "name": "REMOVE_ENTITY",
+      "description": "Remove Entity",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "13": {
+      "name": "START_RESUME",
+      "description": "Start/Resume",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "14": {
+      "name": "STOP_FREEZE",
+      "description": "Stop/Freeze",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "15": {
+      "name": "ACKNOWLEDGE",
+      "description": "Acknowledge",
+      "entityIdFieldName": "originatingID"
+    },
+    "16": {
+      "name": "ACTION_REQUEST",
+      "description": "Action Request"
+    },
+    "17": {
+      "name": "ACTION_RESPONSE",
+      "description": "Action Response",
+      "entityIdFieldName": "originatingID"
+    },
+    "18": {
+      "name": "DATA_QUERY",
+      "description": "Data Query",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "19": {
+      "name": "SET_DATA",
+      "description": "Set Data",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "20": {
+      "name": "DATA",
+      "description": "Data",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "21": {
+      "name": "EVENT_REPORT",
+      "description": "Event Report",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "22": {
+      "name": "COMMENT",
+      "description": "Comment",
+      "entityIdFieldName": "originatingEntityID"
+    },
+    "23": {
+      "name": "ELECTROMAGNETIC_EMISSION",
+      "description": "Electromagnetic Emission",
+      "entityIdFieldName": "emittingEntityID"
+    },
+    "24": {
+      "name": "DESIGNATOR",
+      "description": "Designator",
+      "entityIdFieldName": "designatingEntityID"
+    },
+    "25": {
+      "name": "TRANSMITTER",
+      "description": "Transmitter",
+      "entityIdFieldName": "radioReferenceID"
+    },
+    "26": {
+      "name": "SIGNAL",
+      "description": "Signal",
+      "entityIdFieldName": "radioReferenceID"
+    },
+    "27": {
+      "name": "RECEIVER",
+      "description": "Receiver",
+      "entityIdFieldName": "transmitterEntityId"
+    },
+    "28": {
+      "name": "IFF_ATC_NAVAIDS",
+      "description": "IFF/ATC/NAVAIDS",
+      "entityIdFieldName": "emittingEntityID"
+    },
+    "29": {
+      "name": "UNDERWATER_ACOUSTIC",
+      "description": "Underwater Acoustic"
+    },
+    "30": {
+      "name": "SUPPLEMENTAL_EMISSION_ENTITY_STATE",
+      "description": "Supplemental Emission / Entity State"
+    },
+    "31": {
+      "name": "INTERCOM_SIGNAL",
+      "description": "Intercom Signal"
+    },
+    "32": {
+      "name": "INTERCOM_CONTROL",
+      "description": "Intercom Control"
+    },
+    "33": {
+      "name": "AGGREGATE_STATE",
+      "description": "Aggregate State"
+    },
+    "34": {
+      "name": "ISGROUPOF",
+      "description": "IsGroupOf"
+    },
+    "35": {
+      "name": "TRANSFER_CONTROL",
+      "description": "Transfer Control"
+    },
+    "36": {
+      "name": "ISPARTOF",
+      "description": "IsPartOf"
+    },
+    "37": {
+      "name": "MINEFIELD_STATE",
+      "description": "Minefield State"
+    },
+    "38": {
+      "name": "MINEFIELD_QUERY",
+      "description": "Minefield Query"
+    },
+    "39": {
+      "name": "MINEFIELD_DATA",
+      "description": "Minefield Data"
+    },
+    "40": {
+      "name": "MINEFIELD_RESPONSE_NAK",
+      "description": "Minefield Response NAK"
+    },
+    "41": {
+      "name": "ENVIRONMENTAL_PROCESS",
+      "description": "Environmental Process"
+    },
+    "42": {
+      "name": "GRIDDED_DATA",
+      "description": "Gridded Data"
+    },
+    "43": {
+      "name": "POINT_OBJECT_STATE",
+      "description": "Point Object State"
+    },
+    "44": {
+      "name": "LINEAR_OBJECT_STATE",
+      "description": "Linear Object State"
+    },
+    "45": {
+      "name": "AREAL_OBJECT_STATE",
+      "description": "Areal Object State"
+    },
+    "46": {
+      "name": "TSPI",
+      "description": "TSPI"
+    },
+    "47": {
+      "name": "APPEARANCE",
+      "description": "Appearance"
+    },
+    "48": {
+      "name": "ARTICULATED_PARTS",
+      "description": "Articulated Parts"
+    },
+    "49": {
+      "name": "LE_FIRE",
+      "description": "LE Fire"
+    },
+    "50": {
+      "name": "LE_DETONATION",
+      "description": "LE Detonation"
+    },
+    "51": {
+      "name": "CREATE_ENTITY_R",
+      "description": "Create Entity-R"
+    },
+    "52": {
+      "name": "REMOVE_ENTITY_R",
+      "description": "Remove Entity-R"
+    },
+    "53": {
+      "name": "START_RESUME_R",
+      "description": "Start/Resume-R"
+    },
+    "54": {
+      "name": "STOP_FREEZE_R",
+      "description": "Stop/Freeze-R"
+    },
+    "55": {
+      "name": "ACKNOWLEDGE_R",
+      "description": "Acknowledge-R"
+    },
+    "56": {
+      "name": "ACTION_REQUEST_R",
+      "description": "Action Request-R"
+    },
+    "57": {
+      "name": "ACTION_RESPONSE_R",
+      "description": "Action Response-R"
+    },
+    "58": {
+      "name": "DATA_QUERY_R",
+      "description": "Data Query-R"
+    },
+    "59": {
+      "name": "SET_DATA_R",
+      "description": "Set Data-R"
+    },
+    "60": {
+      "name": "DATA_R",
+      "description": "Data-R"
+    },
+    "61": {
+      "name": "EVENT_REPORT_R",
+      "description": "Event Report-R"
+    },
+    "62": {
+      "name": "COMMENT_R",
+      "description": "Comment-R"
+    },
+    "63": {
+      "name": "RECORD_R",
+      "description": "Record-R"
+    },
+    "64": {
+      "name": "SET_RECORD_R",
+      "description": "Set Record-R"
+    },
+    "65": {
+      "name": "RECORD_QUERY_R",
+      "description": "Record Query-R"
+    },
+    "66": {
+      "name": "COLLISION_ELASTIC",
+      "description": "Collision-Elastic"
+    },
+    "67": {
+      "name": "ENTITY_STATE_UPDATE",
+      "description": "Entity State Update"
+    },
+    "68": {
+      "name": "DIRECTED_ENERGY_FIRE",
+      "description": "Directed Energy Fire",
+      "entityIdFieldName": "firingEntityID"
+    },
+    "69": {
+      "name": "ENTITY_DAMAGE_STATUS",
+      "description": "Entity Damage Status",
+      "entityIdFieldName": "firingEntityID"
+    }
+  },
+  "label_rules": [
+    {
+      "matchAttribute": "USONLY",
+      "pduType": "FIRE",
+      "platformEntityType": "1.2.225.1.5.3.0",
+      "unmatchAttribute": "UNRESTRICTED"
+    },
+    {
+      "pduType": "ELECTROMAGNETIC_EMISSION",
+      "platformEntityType": "1.2.225.1.5.3.0",
+      "matchAttribute": "USONLY",
+      "unmatchAttribute": "UNRESTRICTED"
+    },
+    {
+      "pduType": "ENTITY_STATE",
+      "platformEntityType": "1.2.225.1.5.3.0",
+      "matchAttribute": "USONLY",
+      "unmatchAttribute": "UNRESTRICTED",
+      "entityKinds": [
+        "2"
+      ]
+    }
+  ]
+}

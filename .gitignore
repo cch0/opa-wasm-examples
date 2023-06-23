@@ -1,0 +1,41 @@
+# OS files
+.DS_Store
+
+# Development files
+*.iml
+.cache
+.classpath
+.idea
+.bsp
+.project
+.settings
+.vscode
+dependency-reduced-pom.xml
+nbactions.xml
+notes
+memory
+sqlite::memory:
+traefik/localhost/certs/*
+!traefik/localhost/certs/.gitkeep
+traefik/dev/certs/*
+!traefik/dev/certs/.gitkeep
+*/.factorypath
+uploads/*
+
+# Build artifacts
+coverage
+lib
+target
+build
+.eslintcache
+*Chart.lock
+*/charts/charts
+*requirements.lock
+
+# Runtime artifacts
+#.env*
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/azure/modules/kubernetes/.terraform/

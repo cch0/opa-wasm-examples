@@ -1,0 +1,101 @@
+{
+    "input": {
+        "alternativeEntityType": {
+          "category": 0,
+          "country": 0,
+          "domain": 0,
+          "entityKind": 0,
+          "extra": 0,
+          "marshalledSize": 8,
+          "specific": 0,
+          "subcategory": 0
+        },
+        "capabilities": 0,
+        "deadReckoningParameters": {
+          "deadReckoningAlgorithm": 0,
+          "entityAngularVelocity": {
+            "marshalledSize": 12,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "entityLinearAcceleration": {
+            "marshalledSize": 12,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "marshalledSize": 40,
+          "parameters": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "entityAppearance": 0,
+        "entityID": {
+          "applicationID": 0,
+          "entityID": 5,
+          "marshalledSize": 6,
+          "siteID": 0
+        },
+        "entityLinearVelocity": {
+          "marshalledSize": 12,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "entityLocation": {
+          "marshalledSize": 24,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "entityOrientation": {
+          "marshalledSize": 12,
+          "phi": 0,
+          "psi": 0,
+          "theta": 0
+        },
+        "entityType": {
+          "category": 2,
+          "country": 225,
+          "domain": 2,
+          "entityKind": 1,
+          "extra": 1,
+          "marshalledSize": 8,
+          "specific": 3,
+          "subcategory": 8
+        },
+        "exerciseID": 2,
+        "forceId": 0,
+        "length": 144,
+        "marking": {
+          "characterSet": 0,
+          "characters": "AAAAAAAAAAAAAAA=",
+          "charactersString": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+          "marshalledSize": 12
+        },
+        "marshalledSize": 144,
+        "numberOfVariableParameters": 0,
+        "padding": 0,
+        "pduStatus": 0,
+        "pduType": 1,
+        "protocolFamily": 1,
+        "protocolVersion": 7,
+        "timestamp": 0,
+        "variableParameters": []
+      }
+}

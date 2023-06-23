@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.koverse.kdf</groupId>
+    <artifactId>opa-wasm-java-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java-opa-wasm.version>0.2.3</java-opa-wasm.version>
+        <wasmtime-java.version>0.14.0.3</wasmtime-java.version>
+        <log4j2.version>2.20.0</log4j2.version>
+        <jackson-databind.version>2.15.2</jackson-databind.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.sangkeon</groupId>
+            <artifactId>java-opa-wasm</artifactId>
+            <version>${java-opa-wasm.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.github.kawamuray.wasmtime</groupId>
+                    <artifactId>wasmtime-java</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.github.kawamuray.wasmtime</groupId>
+            <artifactId>wasmtime-java</artifactId>
+            <version>${wasmtime-java.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
+        </dependency>
+
+        <!-- Log4j2 dependencies -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j2.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- end of Log4j2 dependencies -->
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>kdp</name>
+            <url>https://maven.pkg.github.com/koverse/kdp</url>
+        </repository>
+    </repositories>
+</project>
