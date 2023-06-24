@@ -14,7 +14,7 @@
         <Root level="info" additivity="false">
             <AppenderRef ref="console" />
         </Root>
-        <logger name="com.koverse.kdf" level="INFO">
+        <logger name="com.kdf" level="INFO">
             <AppenderRef ref="Console"/>
         </logger>
     </Loggers>

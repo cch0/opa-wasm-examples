@@ -1,4 +1,4 @@
-package koverse
+package example
 
 default default_label := "UNRESTRICTED"
 

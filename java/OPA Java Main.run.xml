@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="OPA Java Main" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="com.koverse.kdf.Main" />
+    <option name="MAIN_CLASS_NAME" value="com.kdf.Main" />
     <module name="opa-wasm-java-example" />
     <option name="WORKING_DIRECTORY" value="$ModuleFileDir$" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.koverse.kdf.*" />
+        <option name="PATTERN" value="com.kdf.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

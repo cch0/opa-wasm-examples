@@ -25,7 +25,7 @@ uploads/*
 # Build artifacts
 coverage
 lib
-target
+**/target
 build
 .eslintcache
 *Chart.lock
@@ -33,9 +33,9 @@ build
 *requirements.lock
 
 # Runtime artifacts
-#.env*
+**/.env*
 node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/azure/modules/kubernetes/.terraform/
+

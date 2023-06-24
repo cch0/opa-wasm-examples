@@ -1,4 +1,4 @@
-package com.koverse.kdf;
+package com.kdf;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,7 +27,7 @@ public class Main {
 
       try (OPAModule om = new OPAModule(bundle); ) {
 
-        String valueString = om.evaluate(input, "koverse/label_to_use");
+        String valueString = om.evaluate(input, "example/label_to_use");
 
         JsonNode evaluation = objectMapper.readTree(valueString);
         logger.info("evaluation result: {}", evaluation);
