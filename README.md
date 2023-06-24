@@ -24,10 +24,17 @@ Execute the `com.kdf.Main` class inside the java directory. The `pom.xml` file s
 
 ## Python Example
 
+- Following the instruction on [wasmer-python](https://github.com/wasmerio/wasmer-python) to install `wasmer`. The reason for this step is that python package might not be available for you OS and architecture.
+- `pip install opa-wasm[cranelift]` or `pip install "opa-wasm[cranelift]"` if you are a `zsh` user, 
+
+
+
+
+
+Execute the command
+
 ```
 cd python
-
-source .env/bin/activate
 
 python3 example.py
 ```
